@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import Marquee from './Marquee';
 import heroImage from '../assets/unnamed.png';
 
 const Hero = () => {
-    const textVariants = {
+    const textVariants: Variants = {
         hidden: { opacity: 0, y: 100 },
         visible: (custom: number) => ({
             opacity: 1,
